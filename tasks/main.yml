@@ -1,0 +1,10 @@
+---
+  - name: centos utilities
+    include: centos_utils.yml
+    when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux'
+
+  - name: ubuntu utilities
+    include: ubuntu_utils.yml
+    when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
+
+

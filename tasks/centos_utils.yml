@@ -1,0 +1,12 @@
+---
+  - name: install centos utilities
+    yum:
+      name: [
+        screen,
+        sysstat,
+        htop,
+        iotop
+      ]
+      state: latest
+
+

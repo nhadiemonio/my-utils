@@ -1,0 +1,11 @@
+---
+  - name: install ubuntu utilities
+    apt:
+      name: [
+        screen,
+        sysstat,
+        htop,
+        iotop
+      ]
+      state: latest
+
